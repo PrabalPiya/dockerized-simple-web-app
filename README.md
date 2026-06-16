@@ -1,23 +1,27 @@
-DevOps Project 1: Dockerized Simple Web App
+Dockerized Simple Web Application
 
-This is a small beginner DevOps project where I used Docker to run a simple Node.js and Express web application inside a container.
+A beginner-friendly DevOps project where I used Docker to run a simple Node.js Express web application inside a container.
 
-The main goal of this project was to understand how an application is packaged using a Dockerfile, built into a Docker image, and then run as a container on my local machine.
+This project helped me understand how an application is packaged using a Dockerfile, built into a Docker image, and run as a container locally.
 
-Tools Used
-Node.js
-Express.js
-Docker
-VS Code
-Git and GitHub
-Terminal
-Project Flow
+Project Goal
+
+The main goal of this project was to learn the basic Docker workflow:
+
 Write application code
 → Create a Dockerfile
 → Build a Docker image
 → Run the image as a container
 → Access the app on localhost
 → Check logs and health endpoint
+Tools Used
+Tool	Purpose
+Node.js	To run the backend application
+Express.js	To create a simple web server
+Docker	To containerize the application
+VS Code	To write and manage the project files
+Git & GitHub	To track and upload the project
+Terminal	To run Docker and Git commands
 Folder Structure
 devops-docker-basic-app/
 │
@@ -34,15 +38,15 @@ git clone <your-repository-url>
 cd devops-docker-basic-app
 2. Build the Docker Image
 docker build -t devops-basic-app:v1 .
-3. Run the Container
+3. Run the Docker Container
 docker run -d -p 3000:3000 --name devops-basic-container devops-basic-app:v1
-4. Test the App
+4. Test the Application
 
 Open this in your browser:
 
 http://localhost:3000
 
-Or test it using curl:
+Or test using terminal:
 
 curl http://localhost:3000
 
@@ -54,15 +58,27 @@ docker logs devops-basic-container
 6. Stop and Remove the Container
 docker stop devops-basic-container
 docker rm devops-basic-container
+Screenshots
+
+Add screenshots here after running the project.
+
+Docker Image Build
+Add screenshot of successful docker build
+Running Container
+Add screenshot of docker ps
+Application Running in Browser
+Add screenshot of localhost:3000
+Health Check Endpoint
+Add screenshot of /health endpoint
 What I Learned
 
-From this project, I learned the basic Docker workflow:
+Through this project, I learned:
 
 How to create a simple Express application
 How to write a Dockerfile
 How to build a Docker image
-How to run an application inside a Docker container
+How to run a Docker container
 How Docker port mapping works
 How to check container logs
-How to use a simple health check endpoint
-Why code changes need a new image build
+How to create a basic health check endpoint
+Why Docker images need to be rebuilt after code changes
