@@ -1,6 +1,6 @@
 # Dockerized Simple Web Application
 
-This is a beginner-friendly DevOps project where I containerized a simple Node.js Express web application using Docker.
+This is a beginner DevOps project where I containerized a simple Node.js Express web application using Docker.
 
 The goal of this project is to understand the basic DevOps workflow of packaging an application into a Docker image and running it as a container locally.
 
